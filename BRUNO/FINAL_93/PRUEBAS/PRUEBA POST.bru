@@ -1,0 +1,22 @@
+meta {
+  name: PRUEBA POST
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3005/api/pruebas/registro
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "email":"miguel@gmail.com",
+    "password":"migul291"
+  }
+}
